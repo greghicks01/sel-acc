@@ -1,3 +1,4 @@
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=greghicks01_sel-acc&metric=alert_status)](https://sonarcloud.io/dashboard?id=greghicks01_sel-acc)
 # sel-acc
 Selenium Fluent Wrapper
 
