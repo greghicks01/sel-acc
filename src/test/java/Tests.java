@@ -4,13 +4,14 @@ import org.junit.Assert;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import selacc.FluentDriver;
 
 import java.net.MalformedURLException;
 import java.net.URL;
 
-public class tests {
+public class Tests {
 
     private FluentDriver fluentDriver;
 
@@ -37,8 +38,11 @@ public class tests {
     @Test
     void testChromeDriver(){
         WebDriver d = fluentDriver.start();
-        Assert.assertNotNull( d );
-        d.quit();
+        try {
+            Assert.assertEquals(d.getClass(), ChromeDriver.class);
+        } finally {
+            d.quit();
+        }
     }
 
     @Test
