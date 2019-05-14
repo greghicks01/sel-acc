@@ -6,7 +6,7 @@ This project wraps selenium drivers with a fluent set of actions to set up and l
 The hub ensures we can also handle BrowserStack, Sauce labs etc
 
 Usage:
-fluent calls using these items - if any are left out, null/empty they are assumed to be the local Chrome Driver (handeld by Bonigarcia WedDriver Manager)
+fluent calls using these items - if any are left out, null/empty they are assumed to be the local Chrome Driver (handled by Bonigarcia WedDriver Manager)
 
   .withCapabilities( DesiredCapabilities dc )
   .withCapabilities( String dc )
@@ -21,4 +21,4 @@ fluent calls using these items - if any are left out, null/empty they are assume
     expects type to cover android ios or null/empty
 
   start()
-    fires the session up and hands the driver for ues in a test
+    fires the session up and hands the driver for use in a test
