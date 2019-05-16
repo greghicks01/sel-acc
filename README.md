@@ -8,7 +8,7 @@ The hub ensures we can also handle BrowserStack, Sauce labs etc
 Usage:
 fluent calls using these items - if any are left out, null/empty they are assumed to be the local Chrome Driver (handled by Bonigarcia WedDriver Manager)
 
-  ~~~.withCapabilities( DesiredCapabilities dc )~~~
+  ```.withCapabilities( DesiredCapabilities dc )```
   ~~~.withCapabilities( String dc )~~~
     initialses the desired capabilities from a formatted string or a capabilities object
 
