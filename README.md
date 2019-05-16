@@ -1,5 +1,6 @@
 # sel-acc
 Selenium Fluent Wrapper
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=greghicks01_sel-acc&metric=alert_status)](https://sonarcloud.io/dashboard?id=greghicks01_sel-acc) [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=greghicks01_sel-acc&metric=bugs)](https://sonarcloud.io/dashboard?id=greghicks01_sel-acc) [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=greghicks01_sel-acc&metric=code_smells)](https://sonarcloud.io/dashboard?id=greghicks01_sel-acc)[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=greghicks01_sel-acc&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=greghicks01_sel-acc) [![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=greghicks01_sel-acc&metric=security_rating)](https://sonarcloud.io/dashboard?id=greghicks01_sel-acc)
 
 This project wraps selenium drivers with a fluent set of actions to set up and launch a browser in tests.
 
