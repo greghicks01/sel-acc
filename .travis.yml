@@ -2,5 +2,10 @@ language: java
 dist: trusty
 
 script:
-  - mvn sonar:sonar
+  - mvn sonar:sonar \
+    -Dsonar.projectKey=greghicks01_sel-acc \
+    -Dsonar.organization=greghicks01-github \
+    -Dsonar.host.url=https://sonarcloud.io \
+    -Dsonar.login=335032acb49a423b9b383485c8abfd109bcdac99
+  
   - mvn clean install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
