@@ -4,4 +4,4 @@ dist: trusty
 script:
   - mvn sonar:sonar -Dsonar.projectKey=greghicks01_sel-acc -Dsonar.organization=greghicks01-github -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=55e69173c834c9931e832a7a2cc326133f8f79bb
   
-  - mvn clean install -Dmaven.javadoc.skip=true -B -V
+  - mvn clean test -Dmaven.javadoc.skip=true -B -V
