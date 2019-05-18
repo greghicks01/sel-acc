@@ -36,7 +36,7 @@ public class Tests {
         Assert.assertEquals( fluentDriver, fluentDriver.usingHub( new URL("https://google.com.au")));
     }
 
-    @Test
+    //@Test
     public void testChromeDriver(){
         WebDriver d = fluentDriver.start();
         try {
@@ -46,7 +46,7 @@ public class Tests {
         }
     }
 
-    @Test
+    //@Test
     public void testAndroidDriver() throws MalformedURLException {
         DesiredCapabilities caps = DesiredCapabilities.android();
         caps.setCapability("deviceName","Samsung");
