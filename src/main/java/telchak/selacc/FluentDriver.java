@@ -1,4 +1,4 @@
-package selacc;
+package telchak.selacc;
 
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.ios.IOSDriver;

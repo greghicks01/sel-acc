@@ -12,9 +12,8 @@
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
 
-        <cucumber.version>4.2.6</cucumber.version>
+        <cucumber.version>4.3.1</cucumber.version>
         <junit.version>4.12</junit.version>
-        <junit5.version>5.3.1</junit5.version>
     </properties>
 
     <build>
@@ -35,19 +34,9 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.22.0</version>
                 <configuration>
-                    <forkCount>10</forkCount>
-                    <reuseForks>false</reuseForks>
-                    <reportsDirectory>target/surefire-reports-${surefire.forkNumber}</reportsDirectory>
-                    <parallel>all</parallel>
-                    <threadCount>10</threadCount>
-                    <properties>
-                        <configurationParameters>
-                            junit.jupiter.conditions.deactivate = *
-                            junit.jupiter.extensions.autodetection.enabled = true
-                            junit.jupiter.testinstance.lifecycle.default = per_class
-                            junit.jupiter.execution.parallel.enabled = true
-                        </configurationParameters>
-                    </properties>
+                    <includes>
+                        <include>Unit.Tests</include>
+                    </includes>
                 </configuration>
             </plugin>
 
@@ -78,16 +67,16 @@
         </dependency>
 
         <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-engine</artifactId>
-            <version>${junit5.version}</version>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${cucumber.version}</version>
             <scope>test</scope>
         </dependency>
 
         <dependency>
-            <groupId>org.junit.vintage</groupId>
-            <artifactId>junit-vintage-engine</artifactId>
-            <version>${junit5.version}</version>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-junit</artifactId>
+            <version>${cucumber.version}</version>
             <scope>test</scope>
         </dependency>
 
