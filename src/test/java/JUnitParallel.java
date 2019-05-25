@@ -15,6 +15,5 @@ public class JUnitParallel {
                         "src/test/resources/features/"
                 }
         );
-        Assert.assertTrue(true,true);
     }
 }
